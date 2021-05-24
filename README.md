@@ -1,5 +1,7 @@
 # OpenVPN in Docker
 
+(**This project is no longer maintained**)
+
 This is a script to install OpenVPN on a Docker container. While it is not recommended to install the server and CA together on the server/container, this script installs both of them together.
 
 ## Installation: Building from source
@@ -36,4 +38,4 @@ docker container start -i <CONTAINER_NAME>
 
 1. The client will not connect if your client system does not have group named `nobody`. Creating a group named `nobody` (user with the least permissions on the system) or deleting the line `group nobody` in the config file (not recommended) will solve the problem.
 
-2. Currently does not support certificate revocation.
+2. Does not support certificate revocation.
